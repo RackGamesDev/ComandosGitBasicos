@@ -1,34 +1,34 @@
-git config --global x.x = x					          Configuracion de git
-git help x									                  Ayuda de git
-git init									                    Iniciar repositorio
+git config --global x.x = x                    Configuracion de git
+git help x                                    Ayuda de git
+git init                                      Iniciar repositorio
 
-git add <archivo/archivos/.>					        Agregar archivos al stage
-git status										                Informacion sobre el estado actual del commit
-git commit -m "mensaje"							          Confirmar archivos del stage y crear commit
-git log											                  Lista de commits
-git diff										                  Mostrar diferencias entre archivos unstaged y su version anterior
-git diff --staged								              Lo mismo pero con los staged
-git reset HEAD <archivo>						          Saca un archivo del stage
-git checkout -- <archivo>						          Devolver un archivo a su version original de ese commit (MOD)
-git commit -a -m "mensaje"						        git add . + git commit -m "mensaje"
-git reset --soft HEAD^							          Deshace el ultimo commit pero sin modificar archivos
-git commit --amend -m "mensaje"					      Agnade los archivos staged al commit sin crear uno nuevo
-git reset --hard HEAD^							          Deshace el ultimo commit y devuelve los archivos a su estado inicial
+git add <archivo/archivos/.>                  Agregar archivos al stage
+git status                                    Informacion sobre el estado actual del commit
+git commit -m "mensaje"                        Confirmar archivos del stage y crear commit
+git log                                        Lista de commits
+git diff                                      Mostrar diferencias entre archivos unstaged y su version anterior
+git diff --staged                              Lo mismo pero con los staged
+git reset HEAD <archivo>                      Saca un archivo del stage
+git checkout -- <archivo>                      Devolver un archivo a su version original de ese commit (MOD)
+git commit -a -m "mensaje"                    git add . + git commit -m "mensaje"
+git reset --soft HEAD^                        Deshace el ultimo commit pero sin modificar archivos
+git commit --amend -m "mensaje"                Agnade los archivos staged al commit sin crear uno nuevo
+git reset --hard HEAD^                        Deshace el ultimo commit y devuelve los archivos a su estado inicial
 
-git remote add <externo(origin)> <url>			  Agnade un puntero (origin) a un repositorio externo
-git remote -v									                Ver todos los remotes
-git remote rm <externo(origin)>					      Borra el puntero a un remote
-git clone <url> <carpeta>						          Descarga un repositorio de internet (sin haber hecho ya uno antes) junto a toda su informacion de git (como crear repositorio)
-git push -u <externo(origin)> <rama(master)>	Sube todos los cambios al repositorio remoto
-git pull										                  Descarga los cambios del repositorio remoto (MOD)
+git remote add <externo(origin)> <url>        Agnade un puntero (origin) a un repositorio externo
+git remote -v                                  Ver todos los remotes
+git remote rm <externo(origin)>                Borra el puntero a un remote
+git clone <url> <carpeta>                      Descarga un repositorio de internet (sin haber hecho ya uno antes) junto a toda su informacion de git (como crear repositorio)
+git push -u <externo(origin)> <rama(master)>  Sube todos los cambios al repositorio remoto
+git pull                                      Descarga los cambios del repositorio remoto (MOD)
 
-git branch <rama>								              Crea una rama a partir de head
-git branch										                Dice la rama actual
-git branch -d <rama>							            Elimina una rama
-git checkout <rama>								            Cambia el head a otra rama (MOD)
-git merge <rama>								              Intenta crear un branch combinando el head y otra rama (MOD)
-git checkout -b <rama>							          git branch <rama> + git checkout <rama>
-git fetch										                  Como git pull pero no junta con la rama actual (git pull seria git fetch + git merge origin/master) (MOD)
+git branch <rama>                              Crea una rama a partir de head
+git branch                                    Dice la rama actual
+git branch -d <rama>                          Elimina una rama
+git checkout <rama>                            Cambia el head a otra rama (MOD)
+git merge <rama>                              Intenta crear un branch combinando el head y otra rama (MOD)
+git checkout -b <rama>                        git branch <rama> + git checkout <rama>
+git fetch                                      Como git pull pero no junta con la rama actual (git pull seria git fetch + git merge origin/master) (MOD)
 
 Extras:
 Toda la informacion del respoitorio se guarda en la carpeta oculta .git

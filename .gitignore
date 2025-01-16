@@ -1,0 +1,3 @@
+#Aqui se especifican los archivos ignorados por git
+no/
+.env
